@@ -6,17 +6,17 @@ def face_record():
 	try:
 		os.mkdir("recorded_images")
 	except FileExistsError:
-		print("Folder already Existed")
+		print("\n!! Folder already Existed !!")
 	try:
 		os.mkdir("Attendence_record")
 	except FileExistsError:
-		print("Folder already existed")
+		print("\n!! Folder already existed !!")
 	def na():
 		try:
-			name = input("Enter your name")				
+			name = input("\nEnter your name :")				
 			os.mkdir("./recorded_images/"+name)
 		except FileExistsError:
-			print("name already existed try another")
+			print("\n!! Name already existed try another !!")
 			name = na()
 		return(name)
 	name = na()

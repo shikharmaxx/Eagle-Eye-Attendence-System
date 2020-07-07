@@ -60,7 +60,7 @@ def test_model():
 	elif (df.loc[length-1,"Attendence"]=="Exit"):
 		df.loc[length]=[dt.now().strftime("%d/%m/%y"),dt.now().strftime("%H:%M"),"Entered"]
 	df.to_csv("./Attendence_record/"+got_name+".csv")
-	print("Attendence Marked")
+	print("\n** Attendence Marked **\n")
 if __name__=="__main__":
 	test_model()
     

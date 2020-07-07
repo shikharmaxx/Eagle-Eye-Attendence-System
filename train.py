@@ -37,6 +37,6 @@ def train_model():
 	joblib.dump(svm_model,'svm_face_train_modelnew.pkl') #saving the created model 
 	print(df)
 	df.to_csv("./target.csv")
-	print('training done ')
+	print('\n** training done ** \n')
 if __name__=="__main__":
 	train_model()

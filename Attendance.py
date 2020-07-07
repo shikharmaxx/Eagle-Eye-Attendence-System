@@ -2,13 +2,13 @@ import record
 import train
 import test
 
-print("enter your choice \n1. New User \n2. Existing User")
+print("Enter your choice \n[1] New User \n[2] Existing User\n")
 ch = input()
 
 if ch=="1":
     record.face_record()
     train.train_model()
-    mar = input("Want to mark your attendence ? (y\n)")
+    mar = input("\nWant to mark your attendence ? (y/n)\n")
     if mar=="y" or mar=="Y":
         test.test_model()
     else:
